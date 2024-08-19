@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: var(silver-2);
+    background-image: url("../images/background.png");background-size: cover; /* Makes the image cover the entire background */
+    background-size: cover; /* Ensures the image always covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-link-cropper {
+    display: inline-block; 
+    position: relative; 
+    width: 100px;
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.instagram-logo {
+    position: absolute;
+    transform: scale(1.1);
+    height: auto;
+    width: 100%;
+}
+
+.image-cropper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%) scale(2.25);
+    height: auto;
+    width: 100%;
+}
+
+:root{
+    /* CSS HEX */
+    --antiflash-white: #F0EEEFff;
+    --silver: #AFADA9ff;
+    --dark-green: #203625ff;
+    --cal-poly-green: #3D492Bff;
+    --lion: #A49373ff;
+    --ecru: #BAAB85ff;
+    --silver-2: #CCC8C4ff;
+    --drab-dark-brown: #4E4F30ff;
+    --dark-green-2: #162214ff;
+    --dark-slate-gray: #3B4D4Cff;
+}
+
+.container-header {
+    display: flex;
+    background-color: var(--dark-green);
+    gap: 50px;
+    justify-content: center;
+    color: var(--antiflash-white);
+}
+
+.container-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 125px;
+    gap: 20px;
+}
+
+.container-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: row;
+    padding-top: 125px;
+    gap: 20px;
+}
+
+.item{
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+#item1 {
+    background-color: var(--dark-green);
+}
