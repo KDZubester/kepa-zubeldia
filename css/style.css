@@ -9,6 +9,13 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.logo-flexbox {
+    display: flex;
+    justify-content: center; /* Horizontally center the div */
+    align-items: center; /* Vertically center the div */
+    gap: 50px;
+}
+
 .logo-link-cropper {
     display: inline-block; 
     position: relative; 
@@ -31,6 +38,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    z-index: 9;
 }
 
 .profile-pic {
@@ -61,7 +69,11 @@ body {
     background-color: var(--dark-green);
     gap: 50px;
     justify-content: center;
+    width: 100%;
+    align-items: center;
     color: var(--antiflash-white);
+    position: fixed;
+    z-index: 10;
 }
 
 .container-intro {
@@ -71,17 +83,29 @@ body {
     margin: 0;
     overflow: hidden;
     flex-direction: column;
-    padding-top: 125px;
+    padding-top: 185px;
     gap: 20px;
 }
 
-.container-resume {
+/* .container-resume {
+    display: flex;
+    align-content: flex-start;
+    align-items:flex-start;
+    margin: 0;
+    flex-direction: row;
+    padding-bottom: 15em;
+    /* padding-top: 125px; */
+    /* gap: 10%;
+} */
+
+.container-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 5%;
     flex-direction: row;
     padding-top: 125px;
+    padding-bottom: 300px;
     gap: 20px;
 }
 
@@ -92,4 +116,64 @@ body {
 }
 #item1 {
     background-color: var(--dark-green);
+}
+
+/* #resume-header{
+    text-align: right;
+    font-weight: bold;
+    padding-left: 25%;
+    font-size: 3em;
+    background-color: var(--dark-green);
+    /* padding-bottom: 5em; */
+/* }
+#resume-content{
+    font-size: 1.5em;
+    text-align: left;
+    flex-wrap: wrap;
+    background-color: var(--dark-slate-gray);
+    padding-bottom: 5em;
+} */
+
+.container-resume-grid{
+    display: grid;
+    grid-template-rows: minmax(100px, 1fr) minmax(100px, 4fr) 10px;
+    grid-template-columns: 1fr minmax(100px, 2fr) minmax(100px, 3fr) 1fr;
+    grid-template-areas: 
+        'blank-left skills skills-contents blank-right' 
+        'blank-left experience experience-contents blank-right'
+        'blank-bottom blank-bottom blank-bottom blank-bottom';
+    grid-gap: 1em;
+}
+
+.skills-grid-item{
+    grid-area: skills;
+    font-weight: bold;
+    font-size: 3.5em;
+    justify-self: left;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.skills-content-grid-item{
+    grid-area: skills-contents;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.exp-grid-item{
+    grid-area: experience;
+    font-weight: bold;
+    font-size: 3.5em;
+    justify-self: left;
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 10em;
+}
+
+.exp-content-grid-item{
+    grid-area: experience-contents;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
 }
