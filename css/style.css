@@ -64,6 +64,22 @@ body {
     --dark-slate-gray: #3B4D4Cff;
 }
 
+a:link {
+    color: var(--antiflash-white); /* Normal link color */
+  }
+  
+  a:visited {
+    color: var(--antiflash-white); /* Color of visited links */
+  }
+  
+  a:hover {
+    color: var(--silver-2); /* Color when the mouse hovers over the link */
+  }
+  
+  a:active {
+    color: var(--dark-slate-gray); /* Color when the link is being clicked */
+  }
+
 .container-header {
     display: flex;
     background-color: var(--dark-green);
@@ -87,17 +103,6 @@ body {
     gap: 20px;
 }
 
-/* .container-resume {
-    display: flex;
-    align-content: flex-start;
-    align-items:flex-start;
-    margin: 0;
-    flex-direction: row;
-    padding-bottom: 15em;
-    /* padding-top: 125px; */
-    /* gap: 10%;
-} */
-
 .container-description {
     display: flex;
     justify-content: center;
@@ -117,22 +122,6 @@ body {
 #item1 {
     background-color: var(--dark-green);
 }
-
-/* #resume-header{
-    text-align: right;
-    font-weight: bold;
-    padding-left: 25%;
-    font-size: 3em;
-    background-color: var(--dark-green);
-    /* padding-bottom: 5em; */
-/* }
-#resume-content{
-    font-size: 1.5em;
-    text-align: left;
-    flex-wrap: wrap;
-    background-color: var(--dark-slate-gray);
-    padding-bottom: 5em;
-} */
 
 .container-resume-grid{
     display: grid;
@@ -177,3 +166,4 @@ body {
     border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
+  
