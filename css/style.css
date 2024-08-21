@@ -9,6 +9,83 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+:root{
+    /* CSS HEX */
+    --antiflash-white: #F0EEEFff;
+    --silver: #AFADA9ff;
+    --dark-green: #203625ff;
+    --cal-poly-green: #3D492Bff;
+    --lion: #A49373ff;
+    --ecru: #BAAB85ff;
+    --silver-2: #CCC8C4ff;
+    --drab-dark-brown: #4E4F30ff;
+    --dark-green-2: #162214ff;
+    --dark-slate-gray: #3B4D4Cff;
+}
+
+a:link {
+    color: var(--antiflash-white); /* Normal link color */
+  }
+  
+  a:visited {
+    color: var(--antiflash-white); /* Color of visited links */
+  }
+  
+  a:hover {
+    color: var(--silver-2); /* Color when the mouse hovers over the link */
+  }
+  
+  a:active {
+    color: var(--dark-slate-gray); /* Color when the link is being clicked */
+  }
+
+
+/*//////////////////////////////////////////////////////////////////////////
+////////////////////////////// Header //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
+
+.container-header {
+    display: flex;
+    background-color: var(--dark-green);
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    color: var(--antiflash-white);
+    position: fixed;
+    z-index: 10;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////
+////////////////////////////// Intro ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
+
+.container-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+    /* padding-top: 185px; */
+    gap: 20px;
+    height: 100vh;
+}
+
+.container-description {
+    display: flex;
+    margin: 5%;
+    flex-direction: row;
+    padding-top: 125px;
+    padding-bottom: 10em;
+    gap: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////
+/////////////////////// Photo Editing //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
+
 .logo-flexbox {
     display: flex;
     justify-content: center; /* Horizontally center the div */
@@ -51,78 +128,10 @@ body {
     width: 100%;
 }
 
-:root{
-    /* CSS HEX */
-    --antiflash-white: #F0EEEFff;
-    --silver: #AFADA9ff;
-    --dark-green: #203625ff;
-    --cal-poly-green: #3D492Bff;
-    --lion: #A49373ff;
-    --ecru: #BAAB85ff;
-    --silver-2: #CCC8C4ff;
-    --drab-dark-brown: #4E4F30ff;
-    --dark-green-2: #162214ff;
-    --dark-slate-gray: #3B4D4Cff;
-}
 
-a:link {
-    color: var(--antiflash-white); /* Normal link color */
-  }
-  
-  a:visited {
-    color: var(--antiflash-white); /* Color of visited links */
-  }
-  
-  a:hover {
-    color: var(--silver-2); /* Color when the mouse hovers over the link */
-  }
-  
-  a:active {
-    color: var(--dark-slate-gray); /* Color when the link is being clicked */
-  }
-
-.container-header {
-    display: flex;
-    background-color: var(--dark-green);
-    gap: 50px;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    color: var(--antiflash-white);
-    position: fixed;
-    z-index: 10;
-}
-
-.container-intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    overflow: hidden;
-    flex-direction: column;
-    padding-top: 185px;
-    gap: 20px;
-}
-
-.container-description {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: 5%;
-    flex-direction: row;
-    padding-top: 125px;
-    padding-bottom: 10em;
-    gap: 20px;
-}
-
-.item{
-    min-height: 50px;
-    font-size: 2em;
-    text-align: center;
-}
-#item1 {
-    background-color: var(--dark-green);
-}
+/*//////////////////////////////////////////////////////////////////////////
+///////////////////////////// Resume Grid //////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
 
 .container-resume-grid{
     display: grid;
@@ -168,4 +177,18 @@ a:link {
     border-bottom: 5px solid black;
     padding-bottom: 10px;
 }
+
+
+/*//////////////////////////////////////////////////////////////////////////
+///////////////////////////// Default Items ////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
   
+
+.item{
+    min-height: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+#item1 {
+    background-color: var(--dark-green);
+}
