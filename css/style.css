@@ -136,18 +136,18 @@ a:link {
 .container-resume-grid{
     display: grid;
     grid-template-rows: minmax(100px, 1fr) minmax(100px, 4fr) 10px;
-    grid-template-columns: 1fr minmax(150px, 2fr) minmax(100px, 3fr) 1fr;
+    grid-template-columns:.25fr minmax(150px, .75fr) minmax(150px, 4fr) .25fr;
     grid-template-areas: 
         'blank-left skills skills-contents blank-right' 
         'blank-left experience experience-contents blank-right'
         'blank-bottom blank-bottom blank-bottom blank-bottom';
-    grid-gap: 1em;
+    grid-gap: .5em;
 }
 
 .skills-grid-item{
     grid-area: skills;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
     justify-self: left;
     border-bottom: 5px solid black;
     border-top: 5px solid black;
@@ -163,7 +163,7 @@ a:link {
 .exp-grid-item{
     grid-area: experience;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
     justify-self: left;
     text-wrap:wrap;
     /* text-align: left; */
