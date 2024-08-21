@@ -192,6 +192,8 @@ a:link {
     gap: 2em;/* Space between grid items, adjust as needed*/
     padding: 10%; /* Optional: Padding around the container */
     padding-top: 10em;
+    margin-bottom: 2em;
+    border-bottom: 5px solid black;
 }
 
 .project-grid-item{
@@ -224,6 +226,13 @@ a:link {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     z-index: 100; /* Ensure it appears above other elements */
+    overflow: auto;
+}
+
+/* Text in popup */
+#popup-text {
+    overflow-wrap: break-word; /* Break long words to fit within the container */
+    word-break: break-word; /* Break long words to prevent overflow */
 }
 
 .popup-content {
@@ -233,6 +242,7 @@ a:link {
     border-radius: 10px;
     width: 50%;
     text-align: center;
+    overflow-y: auto;
 }
 
 /* Popup image styling */
