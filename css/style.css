@@ -111,10 +111,12 @@ a:link {
 }
 
 .image-cropper {
-    width: 30vw; /* or another responsive unit */
-    height: 30vw; /* Same as width */
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    padding-top: 100%; 
+    /* width: 30vw; */
+    /* height: 30vw; */
+    /* width: 400px; */
+    /* height: 400px; */
     position: relative;
     overflow: hidden;
     border-radius: 50%;
