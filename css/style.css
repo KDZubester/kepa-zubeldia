@@ -111,10 +111,10 @@ a:link {
 }
 
 .image-cropper {
-    width: 60vw; /* Responsive width, adjust as needed */
-    height: 60vw; /* Same as width to maintain aspect ratio */
-    max-width: 400px; /* Optional: Max width */
-    max-height: 400px; /* Optional: Max height */
+    width: 80vw; /* Responsive width, adjust as needed */
+    height: 80vw; /* Same as width to maintain aspect ratio */
+    max-width: 500px; /* Optional: Max width */
+    max-height: 500px; /* Optional: Max height */
     /* width: 400px;
     height: 400px; */
     position: relative;
@@ -139,7 +139,7 @@ a:link {
 
 .container-resume-grid{
     display: grid;
-    grid-template-rows: minmax(100px, 1fr) minmax(100px, 4fr) 10px;
+    grid-template-rows: minmax(100px, 1fr) minmax(100px, 2fr) 10px;
     grid-template-columns:.25fr minmax(150px, .75fr) minmax(150px, 4fr) .25fr;
     grid-template-areas: 
         'blank-left skills skills-contents blank-right' 
@@ -182,6 +182,25 @@ a:link {
     padding-bottom: 10px;
 }
 
+
+/*//////////////////////////////////////////////////////////////////////////
+///////////////////////////// Projects Grid ////////////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
+
+.project-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-auto-rows: minmax(400px, 2fr); /* Ensures rows have a minimum height but can grow */
+    gap: 2em;/* Space between grid items, adjust as needed*/
+    padding: 10%; /* Optional: Padding around the container */
+    padding-top: 10em;
+}
+
+.project-grid-item{
+    width: 100%;;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for items */
+}
 
 /*//////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Default Items ////////////////////////////////
