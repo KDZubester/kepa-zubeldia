@@ -127,7 +127,7 @@ a:link {
 .container-resume-grid{
     display: grid;
     grid-template-rows: minmax(100px, 1fr) minmax(100px, 4fr) 10px;
-    grid-template-columns: 1fr minmax(200px, 2fr) minmax(100px, 3fr) 1fr;
+    grid-template-columns: 1fr minmax(150px, 2fr) minmax(100px, 3fr) 1fr;
     grid-template-areas: 
         'blank-left skills skills-contents blank-right' 
         'blank-left experience experience-contents blank-right'
