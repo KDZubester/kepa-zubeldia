@@ -139,7 +139,7 @@ a:link {
 
 .container-resume-grid{
     display: grid;
-    grid-template-rows: minmax(100px, .75fr) minmax(100px, 2fr) 10px;
+    grid-template-rows: minmax(100px, 1fr) minmax(100px, 2fr) 10px;
     grid-template-columns:.25fr minmax(150px, .75fr) minmax(150px, 4fr) .25fr;
     grid-template-areas: 
         'blank-left skills skills-contents blank-right' 
@@ -189,8 +189,8 @@ a:link {
 
 .project-grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    grid-auto-rows: minmax(400px, 2fr); /* Ensures rows have a minimum height but can grow */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-auto-rows: minmax(300px, 2fr); /* Ensures rows have a minimum height but can grow */
     gap: 2em;/* Space between grid items, adjust as needed*/
     padding: 10%; /* Optional: Padding around the container */
     padding-top: 10em;
