@@ -147,7 +147,7 @@ a:link {
 .skills-grid-item{
     grid-area: skills;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     justify-self: left;
     border-bottom: 5px solid black;
     border-top: 5px solid black;
@@ -155,7 +155,7 @@ a:link {
 
 .skills-content-grid-item{
     grid-area: skills-contents;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     border-bottom: 5px solid black;
     border-top: 5px solid black;
 }
@@ -163,7 +163,7 @@ a:link {
 .exp-grid-item{
     grid-area: experience;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     justify-self: left;
     text-wrap:wrap;
     /* text-align: left; */
@@ -173,7 +173,7 @@ a:link {
 
 .exp-content-grid-item{
     grid-area: experience-contents;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     border-bottom: 5px solid black;
     padding-bottom: 10px;
 }
