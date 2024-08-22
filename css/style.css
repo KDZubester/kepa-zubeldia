@@ -138,11 +138,11 @@ a:link {
 .container-resume-grid{
     display: grid;
     grid-template-rows: minmax(100px, 1fr) minmax(100px, 2fr) 10px;
-    grid-template-columns:.25fr minmax(150px, .75fr) minmax(150px, 4fr) .25fr;
+    grid-template-columns:.25fr minmax(150px, 4fr) .25fr;
     grid-template-areas: 
-        'blank-left skills skills-contents blank-right' 
-        'blank-left experience experience-contents blank-right'
-        'blank-bottom blank-bottom blank-bottom blank-bottom';
+        'blank-left skills-contents blank-right' 
+        'blank-left experience-contents blank-right'
+        'blank-bottom blank-bottom blank-bottom';
     grid-gap: .5em;
 }
 
