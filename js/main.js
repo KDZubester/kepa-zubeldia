@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", function() {
         // Content for each pop-up
         const popupContent = {
             "1": {
-                text: "For a school project, I designed and built an 8x8x8 LED matrix cube, controlled by an Arduino and 74HC595 shift registers. Initially inspired by a YouTube tutorial, I faced a major challenge when I inadvertently soldered the LEDs backwards. To address this, I engineered a new circuit and developed entirely original code to drive the LEDs. I also incorporated a prototype game controller, enabling the cube to run abstract 3D games, including the game Snake, which utilized all three axes of the matrix. Despite the limitation that the backward soldering, which prevented the use of PWM frameworks, the project demonstrated my problem-solving skills and creativity. The experience has motivated me to design and prototype an even larger cube, which will be powered by a Raspberry Pi and capable of supporting 4-player games, building on the lessons learned from the initial project.",
+                text: "For a school project, I designed and built an 8x8x8 LED matrix cube, controlled by an Arduino and 74HC595 shift registers. Initially inspired by a YouTube tutorial, I faced a major challenge when I inadvertently soldered the LEDs backwards. To address this, I engineered a new circuit and developed entirely original code to drive the LEDs. I also incorporated a prototype game controller, enabling the cube to run abstract 3D games, including the game Snake, which utilized all three axes of the matrix. Despite the limitation of the backward soldering, which prevented the use of PWM frameworks, the project demonstrated my problem-solving skills and creativity. The experience has motivated me to design and prototype an even larger cube, which will be powered by a Raspberry Pi and capable of supporting 4-player games, building on the lessons learned from the initial project.",
                 image: "images/yellowLEDCube.png", // Replace with the path to your image
                 repo: "https://github.com/KDZubester/snake-cube",
                 link_text: "Check out source code on GitHub"
             },
             "2": {
-                text: "Just for fun, I designed a digital watch prototype using an Arduino ATMega chip, a Real Time Clock chip, and an OLED screen with I2C communication. With a friend, I developed a user interface featuring widgets and games like a stopwatch and racing game. We created kits for friends and family to assemble. Currently, I’m working on a sleeker version with smaller components and Bluetooth, inspired by feedback that the original design wasn’t stylish enough for my wife.",
+                text: "Just for fun, I designed a digital watch prototype using an Arduino ATMega chip, a Real Time Clock chip, and an OLED screen with I2C communication. With a friend, I developed a user interface featuring widgets and games like a stopwatch and racing game. We created kits for friends and family to assemble. The design won $500 at BYU's 2023 Student Innovator of the Year competition. Currently, I’m working on a sleeker version with smaller components and Bluetooth, inspired by feedback that the original design wasn’t stylish enough for my wife.",
                 image: "images/diyWatch.png",
                 repo: "https://github.com/KDZubester/Self-Starter-Kits",
                 link_text: "Check out source code on GitHub"
             },
             "3": {
-                text: "While developing the digital watch, we decided to add bluetooth functionality. So, I designed a port for an Arduino Bluetooth module and built a little robot to showcase this extra feature.",
+                text: "While developing the digital watch, we decided to add bluetooth functionality. I designed a port for an Arduino Bluetooth module and built a little robot to showcase this extra feature.",
                 image: "images/bluetoothRobot.png",
                 repo: "https://youtube.com/shorts/z_sofN2enVc?si=2a8KVNoREIz-cPIx",
                 link_text: "Check out this video to see it work!"
